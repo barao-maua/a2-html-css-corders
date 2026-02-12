@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f3a5f;
+}
+
+/* Subtítulos */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c5282;
+  border-bottom: 2px solid #dbe2ea;
+  padding-bottom: 5px;
+}
+
+/* Foto */
+.foto {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 25px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Links */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lista de habilidades */
+ul {
+  list-style: none;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+/* Itens da lista viram “cards” */
+ul li {
+  background: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+}
+
+/* Blocos de seção com fundo */
+h2 + p,
+h2 + ul,
+h2 + p + p,
+h2 + p + p + p {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .foto {
+    width: 180px;
+    height: 180px;
+  }
+}
