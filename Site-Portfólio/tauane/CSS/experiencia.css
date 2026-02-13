@@ -48,7 +48,8 @@
   display:block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a) ; 
+  background: linear-gradient(135deg, #ffe3f1 0%, #ff85c1 50%, #c2185b 100%);
+
   position: absolute;
   top: 20px;
   left: -4px;
